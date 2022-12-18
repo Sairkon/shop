@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Roboto', sans-serif;  
+    font-family: 'Lobster', cursive;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.container {
+    max-width: 1180px;
+    padding: 0 20px;
+    margin: auto;
+}
+/* header */
+.header__main {
+    width: 100%;
+    height: 100vh;
+    background: url('img_main/header__img--bg.jpg')no-repeat center / cover fixed;
+    margin-bottom: 71px;
+}
+.navbar {
+    padding-top: 43px;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+}
+.header__main--content {
+    display: flex;
+    justify-content: space-between;
+}
+.main--content--title {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 18px;
+    color: black;
+}
+.main--content--list{
+    display: flex;
+    gap: 47px;
+}
+.burger--content--list {
+    margin: 100px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.burger_help {
+    margin-left: 30px;
+}
+.burger__button {
+    cursor: pointer;
+    display: none;
+}
+.menu {
+    width: 35px;
+    display: none !important;
+    cursor: pointer;
+}
+.close {
+    width: 30px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 65px;
+    right: 22px;
+    z-index: 99;
+}
+.btn {
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 5px;
+}
+.active,
+.btn:hover {
+    border-bottom: 1px solid black;
+    transition: none;
+}
+.help ,
+.burger_help{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+/* gender  */
+
+.gender {
+    margin-bottom: 55px;
+}
+.gender__content {
+}
+.gender__content--person {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+    gap: 30px;
+}
+.person {
+    width: 350px;
+    height: 389px;
+    text-align: center;
+    margin: 0 auto 23px;
+}
+.person--img img:hover{
+    transform:scale(1.1);
+}
+.person--img img{
+    width: 350px;
+    height: 350px;
+    margin-bottom: 17px;
+}
+
+.person--text {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.new__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-bottom: 55px;
+}
+.new__content--clothes {
+    width: 745px;
+    height: 841px;
+    margin: auto;
+}
+.clothes--img {
+    margin-bottom: 16px;
+}
+.clothes--img img{
+    width: 745px;
+    height: 745px;
+}
+.clothes--img img:hover,
+.things--img img:hover{
+    transform:scale(0.9);
+}
+.clothes--title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 41px;
+    color: #000000;
+}
+.clothes--text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.new__content--other {
+    display: flex;
+    flex-direction: column;
+}
+.other--things {
+    width: 350px;
+    height: 359px;
+}
+.other--things h4 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+.other--things p {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.42);
+}
+.other--things:nth-child(1) {
+    margin-bottom: 30px;
+}
+.things--img {
+    margin-bottom: 10px;
+}
+.things--img img{
+    width: 350px;
+    height: 300px;
+}
+
+.section__content {
+    width: 100%;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+.section--descriptions {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    padding: 11px 23px 0 16px;
+    background: #F2F2F2;
+}
+.description--title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 41px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.description--text {
+    font-size: 28px;
+    line-height: 34px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.section__img {
+    height: 350px;
+}
+
+.popular__content {
+    margin-bottom: 62px;
+}
+.popular__content h3 {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 41px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+.popular__content--various {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.various {
+    width: 212px;
+    height: 291px;
+    margin:0 auto 10px;
+}
+.v2 {
+    text-align: center;
+}
+.various--img img:hover{
+    transform:scale(1.1);
+}
+.various--img img {
+    width: 212px;
+    height: 212px;
+    margin-bottom: 10px;
+}
+.various--price {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+}
+.various--price span:nth-child(1){
+    text-decoration: line-through;
+}
+.various--price span:nth-child(2){
+    color: #0023C4;
+}
+
+.footer {
+}
+.footer__content {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.footer__content {
+    text-transform: uppercase;
+}
+.footer__content h3 {
+    text-align: center;
+}
+.footer__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer__list a {
+    color: black;
+    text-transform: uppercase;
+}
+
+.woman {
+    display: none;
+}
+.man {
+    display: none;
+}
+.children {
+    display: none;
+}
+
+
+.tab_woman--content,
+.tab_man--content,
+.tab_children--content{
+    display: none;
+}
+.tab_woman--content:target,
+.tab_man--content:target,
+.tab_children--content:target{
+    display: block;
+}
+.tabs__body {
+}
+.section__clothes {
+    display: flex;
+}
+.woman__clothes {
+   width: 60%;
+}
+.woman__clothes h3 {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    color: #000000;
+    margin-bottom: 29px;
+}
+.woman__clothes--list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.outerwear {
+}
+.outerwear--text {
+    height: 75px;
+    text-align: right;
+    padding-top: 24px;
+}
+.btn__clothes{
+        text-align: left;
+}
+.active__clothes{
+    color: red;
+}
+.jumpers{
+    display: none;
+}
+.jeans{
+    display: none;
+}
+.socks{
+    display: none;
+}
+.underwear{
+    display: none;
+}
+.shirts{
+    display: none;
+}
+.hoodies{
+    display: none;
+}
+.polo{
+    display: none;
+}
+.shorts{
+    display: none;
+}
+
+.tab__outerwear--woman {
+    margin-bottom: 100px;
+}
+.tab_new__clothes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.tab_clothes--img {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+.tab_clothes__main img{
+    width: 625px;
+    height: 630px;
+}
+.tab_clothes__other {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.clothes__other--img img{
+    width: 190px;
+    height: 190px;
+}
+.clothes--price {
+    padding-left: 32px;
+}
+.clothes--prise--text {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.clothes--price span {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+.clothes--info {
+    margin-top: 300px;
+}
+.clothes--info h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 11px;
+}
+.info--card--img {
+    display: flex;
+    justify-content: space-between;
+}
+.info--card--img p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    
+    color: #000000;
+}
+.about_product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.aout_product--text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.composition {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tab__outerwear--woman{
+    display: none;
+}
+.tab__outerwear--woman:target {
+    display: block;
+}
+
+
+
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.42);
+    border-radius: 10px;
+}
+
+@media (max-width: 1180px) {
+    .new__content--other {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 45px;
+        margin: auto;
+    }
+    
+}
+@media (max-width: 964px) {
+    .menu {
+        display: block !important;
+    }
+    .main--content--list,
+    .help{
+        display: none;
+    }
+    .tab_new__clothes{
+        flex-direction: column;
+    }
+    .tab_clothes--img{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .tab_clothes__main{
+        margin: auto;
+    }
+    .tab_clothes__other{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .clothes--price{
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .clothes--info{
+        margin: 0;
+    }
+    .price{
+        margin-bottom: 30px;
+    }
+
+}
+@media (max-width: 768px) {
+    .navbar{
+        padding-top: 64px;
+    }
+    .new__content--clothes{
+        width: 545px;
+        height: 545px;
+        margin: 0 auto 90px;
+    }
+    .clothes--img img{
+        width: 545px;
+        height: 545px;
+    }
+    .other--things{
+        margin: 0 auto 30px;
+    }
+    .section__content {
+        height: 300px;
+    }
+    .tab_clothes__main img {
+        width: 450px;
+        height: 450px;
+    }
+}
+@media (max-width: 575.9px){
+    .person ,
+    .other--things{
+        width: 250px;
+        height: 269px;
+    }
+    .person--img img ,
+    .things--img img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 5px;
+    }
+    .new__content--clothes {
+        width: 350px;
+        height: 359px;
+    }
+    .clothes--img img{
+        width: 350px;
+        height: 350px;
+    }
+    .clothes--title{
+       font-size: 21px;
+       line-height: 26px;
+       color: #000000;
+    }
+    .clothes--text{
+        font-size: 19px;
+        line-height: 23px;
+        color: rgba(0, 0, 0, 0.42);
+    }
+    .tab_clothes__main {
+        height: 400px;
+        overflow: hidden;
+    }
+    .section__img {
+        display: none;
+    }
+    .clothes__other--img:nth-child(3){
+        display: none;
+    }
+}
+@media(max-width: 425px) {
+    .new__content--clothes {
+        width: 300px;
+        height: 309px;
+    }
+    .clothes--img img{
+        width: 300px;
+        height: 300px;
+    }
+    .woman__clothes h3 {
+        font-size: 23px;
+    }
+}
